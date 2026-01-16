@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
-import { Slider } from '@/components/ui/progress'; // We might need to check if Slider exists or use Input range
 import { Badge } from '@/components/ui/badge';
 import { Check, ArrowRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
