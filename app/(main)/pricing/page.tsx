@@ -27,7 +27,7 @@ export default function PricingPage() {
                         <CardTitle className="text-2xl font-bold">Standard</CardTitle>
                         <CardDescription className="text-base mt-2">For developers proving their skills.</CardDescription>
                         <div className="my-6">
-                            <span className="text-4xl font-bold">$0</span>
+                            <span className="text-4xl font-bold">₹0</span>
                             <span className="text-muted-foreground">/month</span>
                         </div>
                     </CardHeader>
@@ -67,7 +67,7 @@ export default function PricingPage() {
                         <CardTitle className="text-2xl font-bold">Professional</CardTitle>
                         <CardDescription className="text-base mt-2 text-background/80">For serious career climbers.</CardDescription>
                         <div className="my-6">
-                            <span className="text-4xl font-bold">$29</span>
+                            <span className="text-4xl font-bold">₹998</span>
                             <span className="text-background/80">/month</span>
                         </div>
                     </CardHeader>

@@ -15,10 +15,10 @@ import { cn } from '@/lib/utils';
 const THREADS = [
     {
         id: 't1',
-        recruiter: 'Sarah Jenkins',
-        company: 'Uber',
+        recruiter: 'Priya Sharma',
+        company: 'Swiggy',
         role: 'Backend Systems Architect',
-        avatar: 'https://i.pravatar.cc/150?u=sarah',
+        avatar: 'https://i.pravatar.cc/150?u=priya',
         status: 'Application Accepted',
         lastMessage: 'We reviewed your profile and were impressed by your Node.js verification.',
         timestamp: '2m ago',
@@ -26,10 +26,10 @@ const THREADS = [
     },
     {
         id: 't2',
-        recruiter: 'Mike Chen',
-        company: 'Vercel',
+        recruiter: 'Rahul Verma',
+        company: 'Razorpay',
         role: 'Senior Frontend Engineer',
-        avatar: 'https://i.pravatar.cc/150?u=mike',
+        avatar: 'https://i.pravatar.cc/150?u=rahul',
         status: 'Interview Request',
         lastMessage: 'Are you available for a technical screen next Tuesday?',
         timestamp: '1d ago',
@@ -37,10 +37,10 @@ const THREADS = [
     },
     {
         id: 't3',
-        recruiter: 'Emily Davis',
-        company: 'Linear',
+        recruiter: 'Neha Gupta',
+        company: 'Zomato',
         role: 'Platform Engineer',
-        avatar: 'https://i.pravatar.cc/150?u=emily',
+        avatar: 'https://i.pravatar.cc/150?u=neha',
         status: 'Reviewing',
         lastMessage: 'Thanks for applying! I will get back to you shortly.',
         timestamp: '3d ago',
@@ -52,7 +52,7 @@ const MOCK_MESSAGES: Record<string, { id: string; sender: string; text: string; 
     't1': [
         {
             id: 'm1',
-            sender: 'Sarah Jenkins',
+            sender: 'Priya Sharma',
             text: "Hi Alex! Thanks for applying to the Backend Systems Architect role.",
             time: '10:30 AM',
             isMe: false,
@@ -60,20 +60,20 @@ const MOCK_MESSAGES: Record<string, { id: string; sender: string; text: string; 
         {
             id: 'm2',
             sender: 'Me',
-            text: "Hi Sarah, thanks for reaching out! I'm really excited about the opportunity.",
+            text: "Hi Priya, thanks for reaching out! I'm really excited about the opportunity.",
             time: '10:32 AM',
             isMe: true,
         },
         {
             id: 'm3',
-            sender: 'Sarah Jenkins',
+            sender: 'Priya Sharma',
             text: "We reviewed your profile and were impressed by your Node.js verification. Your 'Node.js Performance' badge shows exactly the skills we need.",
             time: '10:33 AM',
             isMe: false,
         },
         {
             id: 'm4',
-            sender: 'Sarah Jenkins',
+            sender: 'Priya Sharma',
             text: "Would you be open to a quick 15-minute intro call this week?",
             time: '10:34 AM',
             isMe: false,
@@ -82,14 +82,14 @@ const MOCK_MESSAGES: Record<string, { id: string; sender: string; text: string; 
     't2': [
         {
             id: 'm2-1',
-            sender: 'Mike Chen',
-            text: "Hello Alex, I'm Mike from Vercel.",
+            sender: 'Rahul Verma',
+            text: "Hello Alex, I'm Rahul from Razorpay.",
             time: 'Yesterday',
             isMe: false,
         },
         {
             id: 'm2-2',
-            sender: 'Mike Chen',
+            sender: 'Rahul Verma',
             text: "We have an opening for a Senior Frontend Engineer and saw your work on the Design System project.",
             time: 'Yesterday',
             isMe: false,
@@ -97,13 +97,13 @@ const MOCK_MESSAGES: Record<string, { id: string; sender: string; text: string; 
         {
             id: 'm2-3',
             sender: 'Me',
-            text: "Hi Mike! Big fan of Vercel. I'd love to hear more.",
+            text: "Hi Rahul! Big fan of Razorpay's DX. I'd love to hear more.",
             time: 'Yesterday',
             isMe: true,
         },
         {
             id: 'm2-4',
-            sender: 'Mike Chen',
+            sender: 'Rahul Verma',
             text: "Great! Are you available for a technical screen next Tuesday?",
             time: 'Yesterday',
             isMe: false,
@@ -112,14 +112,14 @@ const MOCK_MESSAGES: Record<string, { id: string; sender: string; text: string; 
     't3': [
         {
             id: 'm3-1',
-            sender: 'Emily Davis',
-            text: "Hi Alex, thanks for your application to Linear.",
+            sender: 'Neha Gupta',
+            text: "Hi Alex, thanks for your application to Zomato.",
             time: 'Mon',
             isMe: false,
         },
         {
             id: 'm3-2',
-            sender: 'Emily Davis',
+            sender: 'Neha Gupta',
             text: "We are currently reviewing all candidates and will get back to you shortly.",
             time: 'Mon',
             isMe: false,

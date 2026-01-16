@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { SkillGapAnalyzer } from '@/components/SkillGapAnalyzer';
-import { ArrowLeft, MapPin, Briefcase, DollarSign, Building2, Lock, CheckCircle2, ExternalLink } from 'lucide-react';
+import { ArrowLeft, MapPin, Briefcase, Building2, Lock, CheckCircle2, ExternalLink, IndianRupee } from 'lucide-react';
 import Link from 'next/link';
 import { toast } from 'sonner';
 
@@ -24,7 +24,7 @@ export default function JobDetailsPage() {
     }
 
     const isUnlocked = hasSkill(job.skillId);
-    const isApplied = activeApplications.some(app => app.jobId === jobId);
+    const isApplied = activeApplications.includes(jobId);
     const skillName = MOCK_SKILLS.find(s => s.id === job.skillId)?.name;
 
     const handleApply = () => {
@@ -84,7 +84,7 @@ export default function JobDetailsPage() {
                         <div className="p-4 rounded-xl border border-border bg-card">
                             <p className="text-xs text-muted-foreground uppercase font-bold tracking-wider mb-1">Salary</p>
                             <div className="flex items-center gap-2 font-medium">
-                                <DollarSign className="w-4 h-4" /> {job.salary}
+                                <IndianRupee className="w-4 h-4" /> {job.salary}
                             </div>
                         </div>
                     </div>
